@@ -28,6 +28,8 @@
 			const request = lib.get(url, (response) => {
 				var configData = "";
 
+				console.log(response)
+
 				// Gather incoming data
 				response.on("data", function(chunk) {
 					configData += chunk;
